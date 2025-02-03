@@ -21,26 +21,15 @@
 # Problem 2: Anagram Checker
 
 
-# def are_anagrams(str1, str2):
-#     """
-#     Check if two strings are anagrams.
-#     An anagram is a word or phrase formed by rearranging the letters of a different word or phrase.
-    
-#     Args:
-#     str1 (str): First input string.
-#     str2 (str): Second input string.
-    
-#     Returns:
-#     bool: True if both strings are anagrams, False otherwise.
-#     """
-#     return sorted(str1) == sorted(str2)
 
-# # Example usage:
-# print(are_anagrams("listen", "silent"))  # Output: True
-# print(are_anagrams("hello", "world"))    # Output: False
-
-
-def is_anagrams(str1, str2):
+def are_anagrams(str1, str2):
     return sorted(str1) == sorted(str2)
 
-print (is_anagrams("listen", "silent"))
+print (are_anagrams("listen", "silent"))
+print (are_anagrams("heloo", "Kenn"))
+
+
+# def is_anagrams(str1, str2):
+#     return sorted(str1) == sorted(str2)
+
+# print (is_anagrams("listen", "silent"))
