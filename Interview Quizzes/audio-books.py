@@ -6,11 +6,13 @@ from gtts import gTTS
 import PyPDF2
 
 #Open file Path
-pdf_File = open('name.pdf', 'rb') 
+pdf_File = open('Kenneth-Kariuki_Resume (6).pdf', 'rb') 
 
 #Create PDF Reader Object
-pdf_Reader = PyPDF2.PdfFileReader(pdf_File)
-count = pdf_Reader.numPages # counts number of pages in pdf
+# pdf_Reader = PyPDF2.PdfFileReader(pdf_File)
+pdf_Reader = PyPDF2.PdfReader(pdf_File)
+# count = pdf_Reader.numPages # counts number of pages in pdf
+count = len(pdf_Reader.pages)  # counts number of pages in pdf
 textList = []
 
 #Extracting text data from each page of the pdf file
